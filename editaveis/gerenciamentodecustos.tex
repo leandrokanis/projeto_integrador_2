@@ -1,6 +1,6 @@
 \chapter[Gerenciamento de custos]{Gerenciamento de custos}
 
-\section{Custo subgrupo comunicação}
+\section{Custo subgrupo Comunicação}
 
 \begin{table}[h]
 	\centering
@@ -9,13 +9,15 @@
 		\toprule
 		\textbf{Nome} & \textbf{Preço} & \textbf{Quantidade} \\
 		\midrule
-		Xbee & R\$160,00 & 02          \\
-		GPS & R\$160,00 & 01             \\
+		Xbee & R\$130,00 & 02          \\
+		Xplorer Xbee & R\$45 & 02          \\
+		GPS & R\$57,90 & 01             \\
+		TOTAL & R\$407,90 &-- \\
 		\bottomrule
 	\end{tabular}	
 	\caption{Tabelas com componentes e custos.}
 \end{table}
-\section{Custo subgrupo controle dos motores}
+\section{Custo subgrupo Controle dos motores}
 \begin{table}[h]
 	\centering
 	\label{Custosubgrupocontroledosmotores}	
@@ -23,14 +25,17 @@
 		\toprule
 		\textbf{Nome} & \textbf{Preço} & \textbf{Quantidade} \\
 		\midrule
-		Motor & R\$0,00 & 02          \\
-		Bateria & R\$0,00 & 01             \\
+		Motor & R\$50,00 & 02          \\
+		Bateria 12v 6Ah & R\$44,90 & 02             \\
+		Bateria 9v & R\$34,90 & 02             \\
 	    IMU & R\$13,80 & 01             \\
+	    bombas & R\$30 & 03             \\
+	     TOTAL & R\$363,58 &--            \\
 		\bottomrule
 	\end{tabular}	
-	\caption{Tabelas com componentes e custos.}
+	\caption{Tabelas com componentes e custos do subgrupo comunicação.}
 \end{table}
-\section{Custo subgrupo sensores}
+\section{Custo subgrupo Análise de dados}
 \begin{table}[h]
 	\centering
 	\label{Custosubgruposensores}	
@@ -38,43 +43,59 @@
 		\toprule
 		\textbf{Nome} & \textbf{Preço} & \textbf{Quantidade}&\textbf{Fornecedor} \\
 		\midrule
-		Sensor Turbidez & R\$0,00 & 02   & Mercado livre       \\
-		Sensor PH & R\$0,00 & 01    & Mercado livre         \\
-		Sensor condutividade & R\$0,00 & 01   & Mercado livre          \\
-		Sensor temperatura & R\$10,20 & 01 & Mercado livre            \\
-		Módulo cartão SD & R\$8,99 & 01   & Mercado livre          \\
+		Sensor Turbidez & Valor máximo R\$20,00 & 01   & Vamos projetar       \\
+		Sensor PH & R\$159,95 & 01    & Mercado livre         \\
+		Ponta de aquisição PH & R\$60,00 & 01    & Mercado livre \\
+		Sensor condutividade & Valor máximo R\$20,00 & 01   & Vamos projetar          \\
+		Sensor temperatura & R\$10,20 & 01 & Contato Asa Sul            \\
+		Módulo cartão SD & R\$8,99 & 01   & Contato Asa Sul          \\
 		Cartão SD & R\$3,00 & 01  & Mercado livre           \\
-		Componentes Standalone & R\$0,00 & 01   & Mercado livre          \\
+		Componentes Standalone & R\$17,81 & 01   & Comprado          \\
+		TOTAL & R\$299,95 &--            \\
 		\bottomrule
 	\end{tabular}	
-	\caption{Tabelas com componentes e custos.}
+	\caption{Tabelas com componentes e custos do subgrupo análise de dados.}
 \end{table}
-\section{Custo subgrupo estrutura}
+\section{Custo subgrupo Estrutura}
 \begin{table}[h]
 	\centering
-	\label{Custosubgrupoestrutura}	
+	\label{custoestrutura}	
 	\begin{tabular}{ccc}
 		\toprule
-		\textbf{Nome} & \textbf{Preço} & \textbf{Quantidade} \\
+		\textbf{Materiais} & \textbf{Quantidade} & \textbf{Preço Médio(UNI)} \\
 		\midrule
-		Xbee & R\$160,00 & 02          \\
-		GPS & R\$160,00 & 01             \\
+		Fibra de vidro & 1 & R\$90,00 
+          \\
+		Resina Epoxi & 2 & R\$105,00            \\
+		Isopor &10 & R\$2,00               \\
+		PVC  & 1 & R\$50,00  \\
+		Alumínio & 1& R\$20,00                      \\
+		Catalisador & 1 & R\$30,00             \\
+		Loctite Black &1 & R\$30,00            \\
+		Outros  & - & R\$50,00           \\
+		CUSTO MÉDIO TOTAL & & R\$500,00           \\	
 		\bottomrule
 	\end{tabular}	
-	\caption{Tabelas com componentes e custos.}
+	\caption{Tabela de custos para a fabricação da estrutura do Roboat.}
 \end{table}
+
 \section{Custo total}
 
 \begin{table}[h]
 	\centering
 	\label{Custototal}	
-	\begin{tabular}{ccc}
+	\begin{tabular}{cc}
 		\toprule
-		\textbf{Nome} & \textbf{Preço} & \textbf{Quantidade} \\
+		\textbf{Nome} & \textbf{Preço}  \\
 		\midrule
-		Xbee & R\$160,00 & 02          \\
-		GPS & R\$160,00 & 01             \\
+		Subgrupo Comunicação & R\$407,90 \\
+		Subgrupo Controle dos motores & R\$363,58  \\
+		Subgrupo Análise de dados & R\$299,95 \\
+		Subgrupo Estrutura & R\$500,00  \\
+		Recursos de emergência & R\$300,00\\
+		CUSTO TOTAL & R\$1871,43 \\
+		Investimento individual & R\$133,68 \\
 		\bottomrule
 	\end{tabular}	
-	\caption{Tabelas com componentes e custos.}
+	\caption{Tabela com custo geral de todo o projeto.}
 \end{table}
